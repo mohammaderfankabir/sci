@@ -1,0 +1,81 @@
+% PREAMBLE
+\documentclass[letterpaper, 10pt]{article}
+
+% Page Layout
+\usepackage{geometry}
+\geometry{
+    top=1in, 
+    bottom=1in, 
+    left=1.25in, 
+    right=1in
+}
+
+\frenchspacing                   % Better spacing between words and sentences
+
+% Packages
+\usepackage[english]{babel}      % Language support
+\usepackage{csquotes}            % Context-sensitive quotation marks
+\usepackage{amssymb, amsmath}    % Math symbols and equations
+\usepackage{multicol}            % Multi-column layout
+\setlength{\columnsep}{18pt}     % Gutter
+\setlength{\parskip}{6pt}        % Paragraph spacing
+\setlength{\parindent}{18pt}     % Paragraph indentation
+\usepackage[T1]{fontenc}         % Font encoding
+\usepackage{newtxtext,newtxmath} % Times New Roman for text & math
+\usepackage{hyperref}            % Hyperlinks and PDF behavior
+
+% Bibliography
+\usepackage[backend=biber, sorting=none]{biblatex}
+\addbibresource{references.bib}
+
+% Define Title Command
+\newcommand{\DocumentTitle}[3]{%
+    \begin{center}    
+        \Huge \textbf{#1}       % Title in bold
+        \\[10pt]                % Space
+        \Large #2               % Author's name
+        \\[5pt]                 % Space
+        \normalsize \textit{#3} % Date in italics
+    \end{center}    
+    \par \normalsize \normalfont
+}
+
+\begin{document}
+
+% Acknowledgment Section
+\hfill
+\begin{minipage}{264pt}
+	\begin{center}
+		\emph{—A Note of Thanks—}
+	\end{center}
+	\emph{First and foremost, I wish to express my indebtedness to Prof. John Rofrano of New York University for his enthusiastic encouragement and support when I decided to continue with graduate studies. Our long discussions sparked many ideas for this essay. Next, I thank Prof. Alán Aspuru-Guzik of the University of Toronto, who read all drafts and offered helpful criticisms. He is also to whom I constantly refer for assorted problems. I also thank Dr. Mohammad Rana of UNSW for his recommendation to include the bibliographies. Lastly, I thank Ali Dalir of ConocoPhillips for his diligent efforts and immense generosity and Hoh Leecen, Regional Manager, Recruitment at Lakehead University, for his generous help and guidance.}
+\end{minipage}
+
+\vspace{72pt}
+
+% Title
+\DocumentTitle{Personal Statement}{Mohammaderfan Kabir}{\today}
+
+% Body Text (Two Columns)
+\begin{multicols}{2}
+	\noindent
+	It is natural to suppose that the gifted are often more successful. However, it seemed unjust for my classmates, a reminder that I was born and grew up in a land where neither of my two spirits was appreciated. Life's many examples taught me a concrete view of outliers, a statistical concept essential for making models that can discover rare diseases or detect unusual environmental behavior in autonomous machines. For example, MIT researchers built  "liquid" neural networks, a particular representation loosely related to the computational models of neural dynamics in small species, a type of roundworm that generates remarkable dynamics \cite{hasani2020liquidtimeconstantnetworks}. Thunder Bay to Orillia hosts many rare or endangered species, which is great for machine learning studies because observation is the first step in building mathematical theories. Besides, Lakehead University is a top AI Research university in Canada.
+
+	Machine learning (ML) is like a telescope for learning about ourselves and understanding any intelligence, including humans. To me, studying that is more significant than the moon landing. I invest 84 hours a week learning it, partly by applying algorithms or, in this case, deep learning, yet more on theory.
+
+	When time permits, my studies also involve physics, as it provides a foundation for developing algorithms and computational models that simulate physical phenomena. For example, the idea of probability distributions, which is central to machine learning, is closely related to the concepts of entropy and energy in thermodynamics. Furthermore, quantum information science, an interdisciplinary field that draws from physics and computer science, is built on quantum mechanics and founded on a simple idea that changed how we use physics. Instead of explaining natural quantum systems, we can design them \cite{Nielsen_Chuang_2010}, which provides the foundation for a distinct computing model from classical binary machines.
+
+	A simple change in perspective does not only affect computing models. One notable change was in the programming paradigm. Thinking of logic as something inferred rather than explicitly programmed \cite{Goodfellow-et-al-2016} changed the central theme of computer science to artificial intelligence (AI). AI is a component of an even broader field of cybernetics, which scrutinizes systems that involve control, feedback, and communication, regardless of their host—whether synthetic or organic material.
+
+	Cybernetics presents the most ambitious opportunities, but only those with moral ethics are welcome. The quests are demanding, and any negligence could undermine environmental degradation—processes that reduce the overall health of the environment, which is experiencing a pivotal moment. Our environment hosts a rich sample of intelligent life, evolved from the primitives \cite{darwin1859origin}. However, even the simplest life form is intractable for a scientific inquiry. It is a burden that we can alleviate through abstraction. One approach involves mapping situations to actions to maximize a numerical reward signal, referred to as reinforcement learning \cite{sutton2020reinforcement}. Thus, the simplified quest is to define procedures that take a value, or set of input values, and produce output. These procedures are designated as algorithms \cite{cormen2022introduction}, which are the first step in solving environmental issues. As famously said by Isaac Newton, "It's much better to do a little with certainty and leave the rest for others that come after you" \cite{campbell2020biology}
+
+	Algorithms are mathematical functions used to model or design natural systems. I intend to model a simple nervous system on a computer, an initial step toward understanding more complex structures, such as the human brain.
+
+	On this journey, despite having no background, I never sought computer science as a learning challenge because, for those mathematically inclined, it is just another perspective. Nevertheless, I could only trust authentic sources written in English, the primary language of science, which I had yet to learn. Recalling how, as a preteen, I spent my savings on Deitel's How to Program C, only to develop feelings of inadequacy, I eventually discovered that it was just a poor translation. Afterward, I spent the last two years learning the fundamentals and developing the necessary language skills to read literature—twenty-five years later. During this period, I was a loner. However, I think the beauty of science lies in communication.
+
+	I applied for graduate studies to join the community of scientific discovery and meet new people with whom I can discuss my ideas more frequently or participate in discussion groups that facilitate a broader perspective, along with faculty who inspire my learning and prepare me for a research trajectory.
+
+	\printbibliography
+\end{multicols}
+
+\end{document}
